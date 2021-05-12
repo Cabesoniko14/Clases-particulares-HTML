@@ -16,6 +16,7 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="Aplicaciones JS/cuadraticas.js"></script>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -52,8 +53,23 @@
           </p>
           <br />
           <h2>La aplicación</h2>
-          <p>jujuuju</p>
-          <!-- la app -->
+          <br />
+          <p>
+            Ingresa los valores de <strong>a</strong>, <strong>b</strong>, y
+            <strong>c</strong> de una ecuación cuadrática de la forma
+            <strong>ax&#x00B2; + bx + c = 0</strong>
+          </p>
+          <form name="input_form" action="javascript:chicharronero();">
+            a <input type="text" name="valora" required /> b
+            <input type="text" name="valorb" required /> c
+            <input type="text" name="valorc" required />
+            <br />
+            <input type="submit" value="Calcular" />
+          </form>
+          <br />
+          <h3>Resultado</h3>
+          <br />
+          <p id="output" />
         </div>
       </section>
     </div>

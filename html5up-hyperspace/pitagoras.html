@@ -6,7 +6,7 @@
 -->
 <html>
   <head>
-    <title>Título de la página</title>
+    <title>Teorema de Pitágoras</title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -16,6 +16,7 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="Aplicaciones JS/pitagoras1.js"></script>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -41,12 +42,27 @@
       <section id="main" class="wrapper">
         <div class="inner">
           <h1 class="major">Teorema de Pitágoras</h1>
+          <h2>Pitágoras</h2>
+          <p>Biografía de Pitágoras</p>
+          <br />
           <h2>¿Cómo funciona la app?</h2>
-          <p>Primer texto ddd</p>
+          <p>Explicación de la app</p>
           <br />
           <h2>La aplicación</h2>
-
-          <!-- la app -->
+          <br />
+          <h3>Primera calculadora: dos catetos</h3>
+          <p>
+            Inserte los valores de los catetos de un triángulo para calcular su
+            respectiva hipotenusa.
+          </p>
+          <form name="input_form" action="javascript:catetos();">
+            Cateto a <input type="text" name="valora" required /> Cateto b
+            <input type="text" name="valorb" required />
+            <br />
+            <input type="submit" value="Calcular" />
+          </form>
+          <br />
+          <p id="output" />
         </div>
       </section>
     </div>

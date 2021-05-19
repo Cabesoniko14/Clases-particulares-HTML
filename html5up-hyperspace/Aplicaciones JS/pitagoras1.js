@@ -6,9 +6,9 @@ var outputText;
         ca = document.forms["input_form"]["valora"].value;
         cb = document.forms["input_form"]["valorb"].value;
 
-        if (ca < 0) {
+        if (ca <= 0) {
             outputText = "El valor de los catetos debe ser positivo";
-        } else if (cb < 0) {
+        } else if (cb <= 0) {
             outputText = "El valor de los catetos debe ser positivo";
         } else if (isNaN(ca)) {
             outputText = "El valor de los catetos debe ser numérico";

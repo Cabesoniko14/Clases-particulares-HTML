@@ -17,6 +17,7 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <script src="Aplicaciones JS/pitagoras1.js"></script>
+    <script src="Aplicaciones JS/pitagoras2.js"></script>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -63,6 +64,19 @@
           </form>
           <br />
           <p id="output" />
+          <h3>Segunda calculadora: un cateto y la hipotenusa</h3>
+          <p>
+            Inserte los valores de un cateto (cualquiera) y la hipotenusa de un
+            triángulo para calcular el valor del cateto faltante.
+          </p>
+          <form name="input_form2" action="javascript:hipotenusa();">
+            Cateto <input type="text" name="cateto" required /> Hipotenusa
+            <input type="text" name="hipotenusa" required />
+            <br />
+            <input type="submit" value="Calcular" />
+          </form>
+          <br />
+          <p id="output2" />
         </div>
       </section>
     </div>

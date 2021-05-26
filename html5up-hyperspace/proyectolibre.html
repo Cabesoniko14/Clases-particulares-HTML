@@ -16,6 +16,7 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="Aplicaciones JS/selector.js"></script>
   </head>
   <body class="is-preload">
     <!-- Header -->
@@ -56,8 +57,31 @@
           </p>
           <br />
           <h2>La aplicación</h2>
-
-          <!-- la app -->
+          <br />
+          <form name="input_form" action="javascript:info();">
+            <hr />
+            Tipo de arma:
+            <select
+              name="slct1"
+              id="slct1"
+              onchange="rellenar(this.id,'slct2')"
+            >
+              <option value=""></option>
+              <option value="FusilesA">Fusiles de asalto</option>
+              <option value="Subfusiles">Subfusiles</option>
+              <option value="FusilesT">Fusiles tácticos</option>
+              <option value="RiflesT">Rifles tácticos</option>
+              <option value="Ametralladoras">Ametralladoras ligeras</option>
+              <option value="Pistolas">Pistolas</option>
+              <option value="Ecopetas">Escopetas</option>
+            </select>
+            <hr />
+            Arma:
+            <select name="slct2" id="slct2"></select>
+            <hr />
+            <input type="submit" value="Ver arma" />
+          </form>
+          <p id="output" />
         </div>
       </section>
     </div>
